@@ -10,7 +10,7 @@ function Header() {
       <div className="header-container">
         <div className="header-left">
           <button
-            className="menu-toggle"
+            className="menu-toggle menu-toggle-left btn"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -21,33 +21,54 @@ function Header() {
         </div>
 
         <div className="header-center">
-          <a href="/" className="logo">
+          <a href="/" className="logo btn">
             Twisted Brothers
           </a>
         </div>
 
         <div className="header-right">
           <nav className="header-nav">
-            <Link to="hero">Home</Link>
-            <Link to="menu">Menu</Link>
-            <Link to="about">About</Link>
-            <Link to="contact">Contact</Link>
+            <Link to="hero" className="btn">
+              Home
+            </Link>
+            <Link to="menu" className="btn">
+              Menu
+            </Link>
+            <Link to="about" className="btn">
+              About
+            </Link>
+            <Link to="contact" className="btn">
+              Contact
+            </Link>
           </nav>
+          <button
+            className="menu-toggle menu-toggle-right btn"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={isMenuOpen ? "active" : ""}></span>
+            <span className={isMenuOpen ? "active" : ""}></span>
+            <span className={isMenuOpen ? "active" : ""}></span>
+          </button>
         </div>
       </div>
 
       {isMenuOpen && (
         <nav className="mobile-nav">
-          <Link to="hero" onClick={() => setIsMenuOpen(false)}>
+          <Link to="hero" className="btn" onClick={() => setIsMenuOpen(false)}>
             Home
           </Link>
-          <Link to="menu" onClick={() => setIsMenuOpen(false)}>
+          <Link to="menu" className="btn" onClick={() => setIsMenuOpen(false)}>
             Menu
           </Link>
-          <Link to="about" onClick={() => setIsMenuOpen(false)}>
+          <Link to="about" className="btn" onClick={() => setIsMenuOpen(false)}>
             About
           </Link>
-          <Link to="contact" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="contact"
+            className="btn"
+            onClick={() => setIsMenuOpen(false)}
+          >
             Contact
           </Link>
         </nav>

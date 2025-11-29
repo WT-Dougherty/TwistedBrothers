@@ -39,9 +39,9 @@ function About() {
               <h3 className="about-subtitle">Our Story</h3>
               <p className="about-paragraph">
                 What started as a passion for traditional baking has grown into
-                a mobile kitchen dedicated to bringing you the finest hand-crafted
-                pretzels. Every batch is made fresh daily using time-honored
-                recipes and the finest ingredients.
+                a mobile kitchen dedicated to bringing you the finest
+                hand-crafted pretzels. Every batch is made fresh daily using
+                time-honored recipes and the finest ingredients.
               </p>
             </div>
             <div className="about-text-block">
@@ -56,7 +56,7 @@ function About() {
           </div>
           <div className="about-image-container">
             <img
-              src="/about.jpeg"
+              src="/sunny.jpeg"
               alt="About our pretzel truck"
               className="about-image"
             />
@@ -68,4 +68,3 @@ function About() {
 }
 
 export default About;
-

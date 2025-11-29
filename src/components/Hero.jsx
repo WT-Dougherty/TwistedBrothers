@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Link } from "react-scroll";
 
 function Hero() {
   return (
@@ -11,9 +12,9 @@ function Hero() {
         <p className="hero-description">
           Some general description here about the truck/ point of the truck
         </p>
-        <a href="#products" className="hero-cta">
+        <Link to="menu" className="hero-cta btn">
           See Our Menu
-        </a>
+        </Link>
       </div>
       <div className="hero-image-container">
         <img src="/about.jpeg" className="hero-image" />

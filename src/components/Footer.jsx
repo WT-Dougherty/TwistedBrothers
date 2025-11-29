@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-content">
+        {/* <div className="footer-content">
           <div className="footer-section">
             <h3 className="footer-title">Shop</h3>
             <nav className="footer-nav">
@@ -31,7 +31,7 @@ function Footer() {
               <a href="#twitter">Twitter?</a>
             </nav>
           </div>
-        </div>
+        </div> */}
 
         <div className="footer-bottom">
           <p>&copy; 2025 Twisted Brothers. All rights reserved.</p>

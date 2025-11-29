@@ -1,0 +1,136 @@
+.menu-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-bg);
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.menu-description {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-category {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.category-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  transition: transform var(--transition-base);
+}
+
+.menu-item:hover {
+  transform: translateY(-2px);
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.item-name {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.item-price {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.item-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .menu-content {
+    gap: var(--spacing-md);
+  }
+
+  .menu-category {
+    gap: var(--spacing-sm);
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .menu-item {
+    padding: var(--spacing-xs);
+  }
+
+  .menu-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+  .item-price {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

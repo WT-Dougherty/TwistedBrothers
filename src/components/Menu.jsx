@@ -6,19 +6,18 @@ function Menu() {
       category: "Pretzels",
       items: [
         {
-          name: "Pretzel Bites",
-          description: "Freshly baked soft pretzel bites served with mustard",
-          price: "$8",
+          name: "The Classic",
+          description: "Our Classic Pretzel With Salt",
         },
         {
-          name: "Twisted Pretzels",
-          description: "Classic hand-twisted pretzels with sea salt",
-          price: "$7",
+          name: "Pretzel Brat",
+          description:
+            "A Delicious Locally Sourced Bratwurst Wrapped in Pretzel Dough",
         },
         {
-          name: "Pretzel Sticks",
-          description: "Crispy pretzel sticks with cheese dip",
-          price: "$6",
+          name: "Cinnamon Sugar Bites",
+          description:
+            "Bite-Sized Pretzels Coated in Cinnamon Sugar Dipped in House-Made Icing",
         },
       ],
     },
@@ -26,20 +25,20 @@ function Menu() {
       category: "House Made Sauces",
       items: [
         {
-          name: "The Classic",
-          description:
-            "Traditional soft pretzel with your choice of dipping sauce",
-          price: "$9",
+          name: "Beer Cheese",
+          description: "",
         },
         {
-          name: "Pretzel Sandwich",
-          description: "Pretzel bun with your choice of filling",
-          price: "$12",
+          name: "Honey Mustard",
+          description: "",
         },
         {
-          name: "Pretzel Platter",
-          description: "Assorted pretzels with multiple dipping sauces",
-          price: "$15",
+          name: "Buttermilk Ranch",
+          description: "",
+        },
+        {
+          name: "Vanilla Icing",
+          description: "",
         },
       ],
     },
@@ -65,7 +64,6 @@ function Menu() {
                   <div key={itemIndex} className="menu-item">
                     <div className="menu-item-header">
                       <h4 className="item-name">{item.name}</h4>
-                      <span className="item-price">{item.price}</span>
                     </div>
                     <p className="item-description">{item.description}</p>
                   </div>

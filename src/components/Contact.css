@@ -11,7 +11,9 @@
   margin-right: auto;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .contact-header.visible {
@@ -37,7 +39,9 @@
   margin: 0 auto;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
+  transition:
+    opacity 0.8s ease 0.2s,
+    transform 0.8s ease 0.2s;
 }
 
 .contact-content.visible {
@@ -117,8 +121,9 @@
 
 .contact-content form input[type="submit"]:hover:not(:disabled),
 .contact-content form .btn:hover:not(:disabled) {
-  background-color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background-color: var(--color-bg-opaque);
+  border-color: var(--color-bg-opaque);
+  color: var(--color-text);
 }
 
 .contact-content form input[type="submit"]:disabled,
@@ -184,8 +189,6 @@
 .submit-button {
   align-self: flex-start;
   padding: var(--spacing-sm) var(--spacing-md);
-  background-color: var(--color-text);
-  color: var(--color-bg);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: var(--font-size-sm);
@@ -197,8 +200,8 @@
 }
 
 .submit-button:hover:not(:disabled) {
-  background-color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .submit-button:disabled {
@@ -235,9 +238,8 @@
   .contact-section {
     padding: var(--spacing-lg) 0;
   }
-  
+
   .contact-content {
     max-width: 100%;
   }
 }
-

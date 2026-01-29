@@ -1,0 +1,40 @@
+/* Banner */
+@keyframes banner-anim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.banner-container {
+  background: var(--color-background);
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+.banner-content-wrapper {
+  display: flex;
+  width: var(--banner-width);
+  flex-wrap: nowrap;
+}
+.banner {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-around;
+  animation: banner-anim var(--rotation-duration) linear infinite;
+}
+.banner-image {
+  width: 30vw;
+  opacity: 40%;
+}
+
+@media (max-width: 968px) {
+  :root {
+    --banner-width: 200vw;
+  }
+  .banner-image {
+    width: 30vw;
+  }
+}

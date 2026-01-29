@@ -6,14 +6,16 @@
 
 :root {
   /* Soothing, sophisticated color palette */
-  --color-bg: #fafafa;
-  --color-bg-alt: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-light: #666666;
+  --color-bg: #8b5e3ce6;
+  --color-bg-alt: #8b5e3ce6;
+  --color-text: #ffffff;
+  --color-text-light: #dddddd;
   --color-text-muted: #999999;
   --color-border: #e5e5e5;
   --color-accent: #1a1a1a;
-  --color-accent-hover: #333333;
+  --color-accent-hover: #d9a441;
+  --color-title-red: #c0392b;
+  --color-bg-opaque: #d9a441;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -23,8 +25,10 @@
   --spacing-xl: 6rem;
 
   /* Typography */
-  --font-primary: "Pacifico", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  --font-title: "Barriecito";
+  --font-primary:
+    "Ranchers", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -39,6 +43,10 @@
   --transition-fast: 150ms ease;
   --transition-base: 300ms ease;
   --transition-slow: 500ms ease;
+
+  /* --banner-width: max(100vw, 600px); */
+  --banner-width: 180vw;
+  --rotation-duration: 72s;
 }
 
 body {
@@ -49,6 +57,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+section {
+  background-color: var(--color-bg);
 }
 
 #root {

@@ -8,21 +8,19 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="header-left">
-          <button
-            className="menu-toggle menu-toggle-left btn"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span className={isMenuOpen ? "active" : ""}></span>
-            <span className={isMenuOpen ? "active" : ""}></span>
-            <span className={isMenuOpen ? "active" : ""}></span>
-          </button>
-        </div>
-
         <div className="header-center">
           <a href="/" className="logo btn">
-            Twisted Brothers
+            <div className="title-spacing title-word">Twisted</div>
+            <div className="title-spacing title-word">Brothers</div>
+            <div
+              className="title-word"
+              style={{
+                color: "var(--color-title-red)",
+                fontFamily: "Ranchers",
+              }}
+            >
+              Pretzels
+            </div>
           </a>
         </div>
 

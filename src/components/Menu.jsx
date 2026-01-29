@@ -49,10 +49,7 @@ function Menu() {
       <div className="container">
         <div className="menu-header">
           <h2 className="menu-title">Our Menu</h2>
-          <p className="menu-description">
-            Freshly made pretzels and delicious accompaniments, crafted with
-            care
-          </p>
+          <p className="menu-description">Hot… Handmade… Twisted Right…</p>
         </div>
 
         <div className="menu-content">

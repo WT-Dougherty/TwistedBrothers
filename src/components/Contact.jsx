@@ -13,7 +13,7 @@ function Contact() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (sectionRef.current) {
@@ -58,7 +58,7 @@ function Contact() {
               maxlength="500"
             ></textarea>
 
-            <input className="btn" type="submit" value="send-inquiry" />
+            <input className="btn" type="submit" value="contact us" />
           </form>
         </div>
       </div>

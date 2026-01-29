@@ -11,7 +11,9 @@
   margin-right: auto;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .about-header.visible {
@@ -40,7 +42,9 @@
   margin: 0 auto;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
+  transition:
+    opacity 0.8s ease 0.2s,
+    transform 0.8s ease 0.2s;
 }
 
 .about-content.visible {
@@ -86,6 +90,7 @@
   aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 4px;
+  opacity: 70%;
 }
 
 @media (max-width: 968px) {
@@ -112,4 +117,3 @@
     width: 100%;
   }
 }
-

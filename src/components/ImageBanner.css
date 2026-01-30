@@ -26,15 +26,31 @@
   animation: banner-anim var(--rotation-duration) linear infinite;
 }
 .banner-image {
-  width: 30vw;
+  height: calc(100vh - 6.8rem);
   opacity: 40%;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1000px) and (min-width: 768px) {
   :root {
-    --banner-width: 200vw;
+    --aspect-ratio: 3/4;
+    --banner-width: calc(6 * var(--aspect-ratio) * calc(100vh - 8.2rem));
   }
   .banner-image {
-    width: 30vw;
+    height: calc(100vh - 8.2rem);
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  :root {
+    --banner-width: 360vw;
+  }
+  .banner-container {
+    position: relative;
+  }
+
+  .banner-image {
+    height: calc(var(--banner-width) * 2 / 9);
+    opacity: 65%;
   }
 }

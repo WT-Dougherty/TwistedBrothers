@@ -10,6 +10,11 @@ function Header() {
       <div className="header-container">
         <div className="header-center">
           <a href="/" className="logo btn">
+            {/* <img
+              src="./icons/emus.png"
+              alt="twisted brothers"
+              className="emus"
+            /> */}
             <div className="title-spacing title-word">Twisted</div>
             <div className="title-spacing title-word">Brothers</div>
             <div
@@ -26,7 +31,7 @@ function Header() {
 
         <div className="header-right">
           <nav className="header-nav">
-            <Link to="hero" className="btn">
+            <Link to="hero" className="btn" offset={"8.2rem"}>
               Home
             </Link>
             <Link to="menu" className="btn">
@@ -53,7 +58,12 @@ function Header() {
 
       {isMenuOpen && (
         <nav className="mobile-nav">
-          <Link to="hero" className="btn" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="hero"
+            className="btn"
+            offset={"4rem"}
+            onClick={() => setIsMenuOpen(false)}
+          >
             Home
           </Link>
           <Link to="menu" className="btn" onClick={() => setIsMenuOpen(false)}>

@@ -98,11 +98,16 @@ section.hero {
   }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     min-height: auto;
     padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .hero-wrapper {
+    height: auto;
+    justify-content: flex-start;
   }
 
   .hero-content {

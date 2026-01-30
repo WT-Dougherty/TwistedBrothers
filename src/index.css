@@ -45,7 +45,7 @@
   --transition-slow: 500ms ease;
 
   /* --banner-width: max(100vw, 600px); */
-  --banner-width: 180vw;
+  --banner-width: calc(6 * 3/4 * calc(100vh - 6.8rem));
   --rotation-duration: 72s;
 }
 

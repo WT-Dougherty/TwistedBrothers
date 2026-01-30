@@ -5,7 +5,6 @@ import ImageBanner from "./ImageBanner";
 function Hero() {
   return (
     <section className="hero">
-      <ImageBanner path={"people"} />
       <div className="hero-wrapper">
         <div className="hero-content">
           <h1 className="hero-title">
@@ -20,6 +19,7 @@ function Hero() {
           </div>
         </div>
       </div>
+      <ImageBanner path={"people"} />
     </section>
   );
 }

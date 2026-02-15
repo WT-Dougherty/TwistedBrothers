@@ -24,7 +24,6 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <p>Based in Bozeman, MT • Serving the Gallatin Valley & beyond</p>
-        <p>&copy; 2025 Twisted Brothers. All rights reserved.</p>
       </div>
     </footer>
   );

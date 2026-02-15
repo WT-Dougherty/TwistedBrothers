@@ -61,7 +61,7 @@
 }
 
 .menu-toggle span.active:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(25deg) translate(6px, 6px);
 }
 
 .menu-toggle span.active:nth-child(2) {
@@ -69,7 +69,7 @@
 }
 
 .menu-toggle span.active:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-25deg) translate(6px, -6px);
 }
 
 .header-nav {
@@ -77,48 +77,12 @@
   gap: var(--spacing-md);
 }
 
-.header-nav a {
-  font-size: var(--font-size-sm);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  position: relative;
-  padding: var(--spacing-xs) 0;
-  cursor: pointer;
-}
-
-.header-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--color-text);
-  transition: width var(--transition-base);
-}
-
-.header-nav a:hover::after {
-  width: 100%;
+.header-nav a:hover {
+  transform: scale(1.2);
 }
 
 .title-word:hover {
   transform: scale(1.1);
-}
-
-.cart-button {
-  position: relative;
-  padding: var(--spacing-xs);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cart-button svg {
-  stroke: var(--color-text);
-}
-
-.cart-button:hover svg {
-  stroke: var(--color-text-light);
 }
 
 .mobile-nav {

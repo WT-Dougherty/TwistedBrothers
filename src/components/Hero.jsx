@@ -13,8 +13,8 @@ function Hero() {
             line up for.
           </h1>
           <div className="btn-container">
-            <Link to="menu" className="hero-cta btn">
-              See Our Menu
+            <Link to="contact" className="hero-cta btn">
+              Contact Us
             </Link>
           </div>
         </div>
